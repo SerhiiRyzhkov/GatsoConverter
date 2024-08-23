@@ -1,0 +1,1 @@
+java -jar GSMJ2Convert.jar -src ./MJ2 -dst ./JPG -key ./Keys -pwd gatso -jcq 75 -scl 0 -scv 0 -shl 0 -shv 0 -neg 0 -ngv 0 -min 0 -max 1 -dbh 0 -dbv 0 -dbp 1 -avi 0 -ifr 10 -ofr 10 -vbr 1 -chk off

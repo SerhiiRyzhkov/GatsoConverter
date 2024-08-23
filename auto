@@ -1,0 +1,634 @@
+<GATSO>
+<SystemInfo>
+<SystemSummary Type="Baseline" Version="1.30">
+<Device Node="66" Name="DecisionUnit" Required="true">
+<Hardware Name="SystemController-PCB" ProductNumber="15301P1" SerialNumber="201805000600">
+<Software Name="DecisionUnit" Checksum="E13B7469" Critical="true"/>
+<Software Name="Bootloader" Checksum="0347DEEF" Version="0347DEEF"/>
+<Software Name="Databar" Checksum="F1821BFE" Critical="true"/>
+<Software Name="SystemProfile" Checksum="2A542E51" Critical="true"/>
+</Hardware>
+</Device>
+<Device Node="76" Name="GatsoRT4" Required="false">
+<Hardware Name="RT4-PCB" ProductNumber="RT4-PCB" SerialNumber="201904000259">
+<Software Name="ARM_CPU1" Checksum="1B94E526DBF4C312EC4AE0F039A2F2F3" Version="2.18.0" Critical="true"/>
+<Software Name="ARM_CPU2" Checksum="B144448BAE7D31D56F41E46E002DFB3D" Version="2.18.0" Critical="true"/>
+<Software Name="Bootloader" Checksum="CAA8D9D040E8DF336ECD5E220C9F4730"/>
+<Software Name="FPGA" Checksum="151AB912415A7F1B28F13AE256EBC54B" Version="1.6.1.0" Critical="true"/>
+</Hardware>
+</Device>
+<Device Node="65" Name="Combine" Required="true">
+<Hardware Name="GTCH" ProductNumber="6200-1400-0300" SerialNumber="19-30-854-192">
+<Software Name="ibuffpga" Version="R24.0575" Critical="true"/>
+<Software Name="gtchsysctrl" Version="R07"/>
+</Hardware>
+<Hardware Name="GTIB" ProductNumber="6200-1600-0401" SerialNumber="21-01-847-319">
+<Software Name="gtxx_ibuf.so" Version="20"/>
+<Software Name="gtibsysctrl" Version="R11"/>
+<Software Name="smd" Version="3.0"/>
+<Software Name="combine" Version="1.1.0-r2" Checksum="B6ADB15A4EB711B3E820BE66FFBBAAA1" Critical="true"/>
+<Software Name="/lib/i386-linux-gnu/libnss_files-2.19.so" Checksum="236AB0672E38E5FC0D9F2AA622C71813"/>
+<Software Name="/lib/i386-linux-gnu/libnss_nis-2.19.so" Checksum="FC19D979F1AD520F83A505E858E2B256"/>
+<Software Name="/lib/i386-linux-gnu/libnsl-2.19.so" Checksum="8FA4B31C8692499555728F8E09BB555E"/>
+<Software Name="/lib/i386-linux-gnu/libnss_compat-2.19.so" Checksum="CAE162A7D59ED4166C56EDF454B4EA73"/>
+<Software Name="/usr/lib/i386-linux-gnu/libxslt.so.1.1.28" Checksum="994E86EF838077779D51CA0D5C830D84"/>
+<Software Name="/lib/i386-linux-gnu/libgcc_s.so.1" Checksum="20DB7CD82BA859C05D93A6548ECB3114"/>
+<Software Name="/usr/lib/i386-linux-gnu/libstdc++.so.6.0.20" Checksum="61AFC8862B15E9F19C154847E1AA92F6"/>
+<Software Name="/usr/lib/i386-linux-gnu/libsodium.so.13.0.2" Checksum="C8AB1D06EEF465ADF6635BB4C6381B31"/>
+<Software Name="/lib/i386-linux-gnu/liblzma.so.5.0.0" Checksum="8DB8A6D53B60C2BE350D516EAF732A6E"/>
+<Software Name="/lib/i386-linux-gnu/libpng12.so.0.50.0" Checksum="378CF982976E0831E9FD448048D00B18"/>
+<Software Name="/lib/i386-linux-gnu/libz.so.1.2.8" Checksum="4C5BA6FBEB5EB281C6A5D924850D6D0F"/>
+<Software Name="/lib/i386-linux-gnu/libc-2.19.so" Checksum="EE096204CEE498C856A38EBC539655DD"/>
+<Software Name="/usr/lib/libgtcrypt.so" Checksum="5A4EF8ED13429E70DA985AD18D716A51"/>
+<Software Name="/usr/lib/i386-linux-gnu/libcrypto.so.1.0.0" Checksum="55EC50E3973E388C6541370417FCDBA7"/>
+<Software Name="/lib/i386-linux-gnu/libm-2.19.so" Checksum="92A447BDAB862A12DDF53AA51E61C058"/>
+<Software Name="/usr/lib/i386-linux-gnu/libprotobuf-c.so.1.0.0" Checksum="C84139564FA4DBA56CFC932939A17D39"/>
+<Software Name="/usr/lib/i386-linux-gnu/libssl.so.1.0.0" Checksum="1C46439209D778382B1083A07D87D49B"/>
+<Software Name="/lib/i386-linux-gnu/librt-2.19.so" Checksum="02DCC7393354FDCB29F46E73F5615D2C"/>
+<Software Name="/usr/lib/libczmq.so.3.0.0" Checksum="FAD6A510CB0427275519B5D10178E918"/>
+<Software Name="storage" Version="1.1.0-r2" Checksum="82338E3211EEF84A9C60CDFA8EC5B49F"/>
+<Software Name="imgsrv" Version="1.0.0-r1" Checksum="D1F0E2CEEC1D2A0B1F7989DE13D732E6" Critical="true"/>
+<Software Name="ipd" Checksum="85304C833AAD78639C04462FF450992D"/>
+<Software Name="ANPR-Worker" Checksum="E1208B390533EB419A42301725811FF1" Required="true"/>
+<Software Name="/usr/lib/libintrada_cm_X_EU.so" Checksum="25DA07297BA7BF8B93715DE3E9189DA7"/>
+<Software Name="/usr/lib/libintrada.so" Checksum="187419878A529AC072D7B422ABE9BE7E" Version="6.0.42001"/>
+</Hardware>
+</Device>
+<Device Node="67" Name="Busproxy" Required="true">
+<Hardware Name="GTCH" ProductNumber="6200-1400-0300" SerialNumber="19-30-854-192">
+<Software Name="gtchsysctrl" Version="R07"/>
+<Software Name="ibuffpga" Version="R24.0575"/>
+</Hardware>
+<Hardware Name="GTIB" ProductNumber="6200-1600-0401" SerialNumber="21-01-847-319">
+<Software Name="gtibsysctrl" Version="R11"/>
+<Software Name="Busproxy" Checksum="0F138D36BA6FE1A1ACFB713F31192B5C"/>
+<Software Name="webservice" Checksum="9B7172836F2452FA25971971F833AA51" Critical="true"/>
+<Software Name="SoftwareUpdate" Checksum="50E91BA182D11A6D9D4B012928C4D83D" Critical="true"/>
+</Hardware>
+</Device>
+<Device Node="70" Name="VTLI" Required="false">
+<Hardware Name="GTIB" ProductNumber="6200-1600-0401" SerialNumber="21-01-847-319">
+<Software Name="vtli" Checksum="8869252643060F430F1C0C6849115DC8"/>
+</Hardware>
+</Device>
+<Device Node="72" Name="WTLI" Required="false">
+<Hardware Name="WTLI-PCB" ProductNumber="12410P1">
+<Software Name="WiredTrafficLightInterface" Checksum="FA752CD3"/>
+<Software Name="Bootloader" Checksum="1A6BC2A0"/>
+</Hardware>
+</Device>
+</SystemSummary>
+<Configuration>
+<Combine Instance="0">
+<Image>
+<Size Unit="Bytes">4194304</Size>
+</Image>
+<ImageQuality>
+<Brightness>
+<Day>
+<SlideStep>2</SlideStep>
+<Default>16.000000</Default>
+<Factor>1.414214</Factor>
+<IsDay>32</IsDay>
+</Day>
+<Night>
+<SlideStep>2</SlideStep>
+<Default>47.000000</Default>
+<Factor>1.189207</Factor>
+<MaxFNumber>33</MaxFNumber>
+</Night>
+</Brightness>
+</ImageQuality>
+<EventVideo>
+<MovieImageSize Unit="Bytes">100000</MovieImageSize>
+<SensorFramerate Unit="/s">25</SensorFramerate>
+<Skip>2</Skip>
+</EventVideo>
+</Combine>
+<RT4 Instance="0">
+<PostProc>
+<Yaw Unit="°">6.7000</Yaw>
+<DetectThreshold Unit="dB">32</DetectThreshold>
+<MaxNrDetect>600</MaxNrDetect>
+<MinYVal Unit="cm">0</MinYVal>
+<MaxYVal Unit="cm">1000</MaxYVal>
+<MinVelocity Unit="cm/s">-100</MinVelocity>
+<MaxRange Unit="cm">15000</MaxRange>
+<InstallHeight Unit="cm">87</InstallHeight>
+</PostProc>
+<Tracking>
+<MaxNrOfTracks>50</MaxNrOfTracks>
+<DistanceToFirstLane Unit="cm">153</DistanceToFirstLane>
+<RightSideMargin Unit="cm">200</RightSideMargin>
+<LeftSideMargin Unit="cm">2500</LeftSideMargin>
+<Lane Number="1">
+<Width Unit="cm">700</Width>
+<DetectionLine Number="1">
+<Distance Unit="cm">2854</Distance>
+<VehiclePosition>RecedingNearestApproachingNearest</VehiclePosition>
+</DetectionLine>
+<DetectionLine Number="2">
+<Distance Unit="cm">13634</Distance>
+<VehiclePosition>RecedingNearestApproachingNearest</VehiclePosition>
+</DetectionLine>
+<DetectionLine Number="3">
+<Distance Unit="cm">13834</Distance>
+<VehiclePosition>RecedingNearestApproachingNearest</VehiclePosition>
+</DetectionLine>
+</Lane>
+<Lane Number="2">
+<Width Unit="cm">700</Width>
+<DetectionLine Number="1">
+<Distance Unit="cm">2854</Distance>
+<VehiclePosition>RecedingNearestApproachingNearest</VehiclePosition>
+</DetectionLine>
+<DetectionLine Number="2">
+<Distance Unit="cm">13634</Distance>
+<VehiclePosition>RecedingNearestApproachingNearest</VehiclePosition>
+</DetectionLine>
+<DetectionLine Number="3">
+<Distance Unit="cm">13834</Distance>
+<VehiclePosition>RecedingNearestApproachingNearest</VehiclePosition>
+</DetectionLine>
+</Lane>
+</Tracking>
+<SignalGen>
+<StartBandwidth Unit="MHz">24007</StartBandwidth>
+<StopBandwidth Unit="MHz">24243</StopBandwidth>
+</SignalGen>
+</RT4>
+<EnforcementParameters Instance="0">
+<Direction Lane="1">
+<RedLight>None</RedLight>
+<Speed>None</Speed>
+<Prohibited>Both</Prohibited>
+<Dedicated>Both</Dedicated>
+</Direction>
+<Direction Lane="2">
+<RedLight>None</RedLight>
+<Speed>None</Speed>
+<Prohibited>Both</Prohibited>
+<Dedicated>Both</Dedicated>
+</Direction>
+<MinimumYellowTime Unit="s">0.1</MinimumYellowTime>
+<GraceTime Unit="s">0.50</GraceTime>
+<RedPlusYellow>FreePass</RedPlusYellow>
+<RedSpeedThreshold Unit="km/h">20</RedSpeedThreshold>
+<CarSpeedLimit Unit="km/h">20</CarSpeedLimit>
+<TruckSpeedLimit Unit="km/h">20</TruckSpeedLimit>
+<CarSpeedThreshold Unit="km/h">20</CarSpeedThreshold>
+<TruckSpeedThreshold Unit="km/h">20</TruckSpeedThreshold>
+<TruckLengthThreshold Unit="cm">750</TruckLengthThreshold>
+<Dedicated Lane="1">
+<CarProhibited/>
+<TruckProhibited/>
+</Dedicated>
+<Dedicated Lane="2">
+<CarProhibited/>
+<TruckProhibited/>
+</Dedicated>
+<HideSelftestSpeed>0</HideSelftestSpeed>
+</EnforcementParameters>
+<EventCapture Instance="0">
+<EventVideo>true</EventVideo>
+<PreTriggerTime Unit="ms">2000</PreTriggerTime>
+<PostTriggerTime Unit="ms">2000</PostTriggerTime>
+<TrafficLightMainsPhase>0</TrafficLightMainsPhase>
+<ActiveLampPhase Unit="%">30</ActiveLampPhase>
+</EventCapture>
+<FanControlParameters Instance="0">
+<TempFanIntOn Unit="°C">40</TempFanIntOn>
+<TempFanIntOff Unit="°C">35</TempFanIntOff>
+<TempFanExtOn Unit="°C">50</TempFanExtOn>
+<TempFanExtOff Unit="°C">45</TempFanExtOff>
+</FanControlParameters>
+<Flash Instance="0">
+<Triggered>
+<Power>2108</Power>
+<Factor>59</Factor>
+<Min>0</Min>
+<Max>1000</Max>
+<Day>
+<SlideStep>-3</SlideStep>
+<Default>1430.000000</Default>
+<Factor>3.750000</Factor>
+<ApertureLargest>28.000000</ApertureLargest>
+<ApertureSmallest>113.000000</ApertureSmallest>
+</Day>
+<Night>
+<SlideStep>0</SlideStep>
+<Default>67.000000</Default>
+<Factor>3.750000</Factor>
+<ApertureLargest>28.000000</ApertureLargest>
+<ApertureSmallest>113.000000</ApertureSmallest>
+</Night>
+</Triggered>
+<Strobe>
+<Power>2000</Power>
+<Factor>0</Factor>
+<Min>0</Min>
+<Max>250</Max>
+</Strobe>
+<External>
+<Power>518</Power>
+<Factor>4981</Factor>
+<Min>35</Min>
+<Max>1000</Max>
+<Day>
+<SlideStep>-3</SlideStep>
+<Default>65.000000</Default>
+<Factor>3.750000</Factor>
+<ApertureLargest>28.000000</ApertureLargest>
+<ApertureSmallest>113.000000</ApertureSmallest>
+</Day>
+<Night>
+<SlideStep>0</SlideStep>
+<Default>28.000000</Default>
+<Factor>3.750000</Factor>
+<ApertureLargest>28.000000</ApertureLargest>
+<ApertureSmallest>113.000000</ApertureSmallest>
+</Night>
+</External>
+</Flash>
+<Identification Instance="0">
+<Serial>21-01-847-319</Serial>
+<ApprovalNumber> </ApprovalNumber>
+<ApprovalDate>2013-01-01</ApprovalDate>
+<ExpireDate>2038-01-19</ExpireDate>
+</Identification>
+<Localisation Instance="0">
+<SpeedUnit>SI</SpeedUnit>
+<DistanceUnit>SI</DistanceUnit>
+<DateFormat>%d-%m-%Y</DateFormat>
+<TimeFormat>%H:%M:%S</TimeFormat>
+<TimeDecimals>0</TimeDecimals>
+<TimeZone>Etc/+3</TimeZone>
+</Localisation>
+<Lanes Instance="0">
+<Lane Number="1">
+<Label>A</Label>
+<TrafficDirection>Receding</TrafficDirection>
+<LaneDirection>Straight</LaneDirection>
+<LaneType>Lane</LaneType>
+<SecondImageType>HiRes</SecondImageType>
+<ImageInterval>Distance</ImageInterval>
+<IntervalDistance Unit="cm">2000</IntervalDistance>
+<LightGroup>0</LightGroup>
+</Lane>
+<Lane Number="2">
+<Label>B</Label>
+<TrafficDirection>Approaching</TrafficDirection>
+<LaneDirection>Straight</LaneDirection>
+<LaneType>Lane</LaneType>
+<SecondImageType>HiRes</SecondImageType>
+<ImageInterval>Distance</ImageInterval>
+<IntervalDistance Unit="cm">2000</IntervalDistance>
+<LightGroup>1</LightGroup>
+</Lane>
+<DefaultLaneWidth Unit="cm">700</DefaultLaneWidth>
+</Lanes>
+<System Instance="0">
+<Housing Instance="0">
+<Height Unit="cm">187</Height>
+<Pitch Unit="°">1.4</Pitch>
+<Roll Unit="°">0.0</Roll>
+<Yaw Unit="°">6.5</Yaw>
+</Housing>
+<RadarAlignment>Automatic</RadarAlignment>
+<TimeSource>GPS</TimeSource>
+<InstallerName>ALESI</InstallerName>
+<LocationDescription>Gatso</LocationDescription>
+<LocationDescription2>SGG_HAARLEM</LocationDescription2>
+<SystemSetup>Portable</SystemSetup>
+</System>
+<ViolatorMarking Instance="0">
+<UseViolatorMarker>1</UseViolatorMarker>
+<Height Unit="cm">160</Height>
+<VerticalOpening Unit="°">1.0</VerticalOpening>
+<Width Unit="cm">200</Width>
+<HorizontalOpening Unit="°">1.0</HorizontalOpening>
+<Offset Position="Left" Direction="Receding">
+<X Unit="cm">0</X>
+<Y Unit="cm">0</Y>
+<Z Unit="cm">80</Z>
+</Offset>
+<Offset Position="Left" Direction="Approaching">
+<X Unit="cm">0</X>
+<Y Unit="cm">0</Y>
+<Z Unit="cm">80</Z>
+</Offset>
+<Offset Position="Right" Direction="Receding">
+<X Unit="cm">0</X>
+<Y Unit="cm">0</Y>
+<Z Unit="cm">80</Z>
+</Offset>
+<Offset Position="Right" Direction="Approaching">
+<X Unit="cm">0</X>
+<Y Unit="cm">0</Y>
+<Z Unit="cm">80</Z>
+</Offset>
+</ViolatorMarking>
+<Anpr Instance="0">
+<ConfidenceViolation>300</ConfidenceViolation>
+<CharacterHeight>
+<Min Unit="cm">5</Min>
+<Max Unit="cm">10</Max>
+</CharacterHeight>
+<ConfidenceThreshold>700</ConfidenceThreshold>
+<CountryModules>X_EU</CountryModules>
+<MaxTime Unit="ms">1000</MaxTime>
+<ANPRStreaming>0</ANPRStreaming>
+</Anpr>
+<Alarm Instance="0">
+<MovingRollMinimum Unit="°">2</MovingRollMinimum>
+<MovingRollMaximum Unit="°">2</MovingRollMaximum>
+<MovingPitchMinimum Unit="°">2</MovingPitchMinimum>
+<MovingPitchMaximum Unit="°">2</MovingPitchMaximum>
+<RollMinimum Unit="°">5</RollMinimum>
+<RollMaximum Unit="°">5</RollMaximum>
+<PitchMinimum Unit="°">5</PitchMinimum>
+<PitchMaximum Unit="°">5</PitchMaximum>
+</Alarm>
+<TrafficLight Instance="0">
+<TLI>None</TLI>
+<Latency Unit="ms">300</Latency>
+<ChangeOverDelay Unit="ms">500</ChangeOverDelay>
+</TrafficLight>
+<Detection Instance="0">
+<GLD>0</GLD>
+<CountLeftRight>Right</CountLeftRight>
+</Detection>
+</Configuration>
+<EPas>
+<PId>48202</PId>
+<PIdx>0</PIdx>
+<PKey>1657025332</PKey>
+<Jul>1657025332.414594</Jul>
+</EPas>
+<ECfrm>
+<PIdx>9</PIdx>
+<MCfrm>Confirm</MCfrm>
+<DReas>A703</DReas>
+<NrCfrm>1</NrCfrm>
+<RTId>127</RTId>
+</ECfrm>
+<EOff>
+<PIdx>4</PIdx>
+<OffT>Prohibited,Dedicated</OffT>
+<VsHpt>2400852801</VsHpt>
+<VeHpt>2404852801</VeHpt>
+</EOff>
+<StartMovie Unit="s">2409.014610</StartMovie>
+<StopMovie Unit="s">2413.014610</StopMovie>
+<FirstMovieSample Unit="s">2413.025608</FirstMovieSample>
+<FirstMovieSampleHpt>2404863826</FirstMovieSampleHpt>
+<LastMovieSample Unit="s">2413.025608</LastMovieSample>
+<LastMovieSampleHpt>2404863826</LastMovieSampleHpt>
+<DatabarPosition>Bottom</DatabarPosition>
+</SystemInfo>
+<Page Id="1">
+<ImageInfo>
+<FIH>
+<Frame>
+<FrameType>CFA</FrameType>
+<Width>5120</Width>
+<Height>3840</Height>
+<BitDepth>12</BitDepth>
+</Frame>
+<SensorID>20123240</SensorID>
+<Timestamp Unit="s">2411.015002</Timestamp>
+<Hpt>2402853206</Hpt>
+<TriggerPrio>High</TriggerPrio>
+<TriggerSource>CAN</TriggerSource>
+<DeadPixelCorrection>true</DeadPixelCorrection>
+<LeftRightCorrection>true</LeftRightCorrection>
+<StoreImage>false</StoreImage>
+<CCM>((135, 1522, -273, 4184, 0), (-1370, -2938, 4440, 410, 2048), (3783, -3217, -686, -359, 2048))</CCM>
+<SensorRegister>
+<HighPrio>
+<ExposureTime Unit="us">999</ExposureTime>
+<InterleavedExposure>false</InterleavedExposure>
+<Gain>24</Gain>
+</HighPrio>
+<LowPrio>
+<ExposureTime Unit="us">999</ExposureTime>
+<InterleavedExposure>false</InterleavedExposure>
+<Gain>24</Gain>
+</LowPrio>
+</SensorRegister>
+</FIH>
+<IQC>
+<Aperture>94</Aperture>
+<Gain>24</Gain>
+<ExposureTime Unit="us">1000</ExposureTime>
+<FlashIntensity>11280</FlashIntensity>
+<MinFocalLength Unit="mm">85</MinFocalLength>
+<FocalLength Unit="mm">85</FocalLength>
+<MaxFocalLength Unit="mm">85</MaxFocalLength>
+</IQC>
+<Aux>
+<Anpr>
+<Duration Unit="ms">584</Duration>
+<ViolatorMarker>
+<Top>2246</Top>
+<Left>1259</Left>
+<Bottom>3222</Bottom>
+<Right>2391</Right>
+</ViolatorMarker>
+<Center>
+<X>1825</X>
+<Y>2734</Y>
+</Center>
+<CharacterHeight>
+<Min>23</Min>
+<Max>46</Max>
+</CharacterHeight>
+<Areas>
+<Location>
+<Top>2469</Top>
+<Left>1614</Left>
+<Bottom>2518</Bottom>
+<Right>1832</Right>
+</Location>
+</Areas>
+<NumberPlates>
+<Plate>
+<Number>CA5655BX</Number>
+<Country>X_EU</Country>
+<CharacterHeight>3088</CharacterHeight>
+<Confidence>916</Confidence>
+<Location>
+<Top>2469</Top>
+<Left>1614</Left>
+<Bottom>2518</Bottom>
+<Right>1832</Right>
+</Location>
+<Quadrangle>
+<TopLeftX>1617</TopLeftX>
+<TopLeftY>2469</TopLeftY>
+<TopRightX>1832</TopRightX>
+<TopRightY>2478</TopRightY>
+<BottomLeftX>1614</BottomLeftX>
+<BottomLeftY>2510</BottomLeftY>
+<BottomRightX>1829</BottomRightX>
+<BottomRightY>2518</BottomRightY>
+</Quadrangle>
+</Plate>
+</NumberPlates>
+<DetectionLines>
+<Line Index="1">
+<x1>3356.14</x1>
+<y1>3115.49</y1>
+<x2>183.49</x2>
+<y2>3083.17</y2>
+</Line>
+</DetectionLines>
+</Anpr>
+</Aux>
+<EMea>
+<PIdx>6</PIdx>
+<THpt>2402852926</THpt>
+<Jul>1657025332.414594</Jul>
+<ETO Unit="ms">0.014</ETO>
+<TStamp>2022-07-05T15:48:54+03:00</TStamp>
+<Date>05-07-2022</Date>
+<Time>15:48:54</Time>
+<ImgNr>1</ImgNr>
+<RHpt>2400751530</RHpt>
+<YPos>487</YPos>
+<XPos>2854</XPos>
+<Lane>1</Lane>
+<DLin>0</DLin>
+<VSpd Unit="km/h">34</VSpd>
+<VDir>Receding</VDir>
+<VLen Unit="cm">382</VLen>
+<VWid Unit="cm">228</VWid>
+<VType>Car</VType>
+<RCnf>0</RCnf>
+<RTId>127</RTId>
+<REmu>false</REmu>
+<LLab>A</LLab>
+<Anpr>1</Anpr>
+<OffT>Prohibited,Dedicated</OffT>
+<ETyp>Passage</ETyp>
+</EMea>
+</ImageInfo>
+</Page>
+<Page Id="2">
+<ImageInfo>
+<FIH>
+<Frame>
+<FrameType>CFA</FrameType>
+<Width>5120</Width>
+<Height>3840</Height>
+<BitDepth>12</BitDepth>
+</Frame>
+<SensorID>20123240</SensorID>
+<Timestamp Unit="s">2413.102669</Timestamp>
+<Hpt>2404940873</Hpt>
+<TriggerPrio>High</TriggerPrio>
+<TriggerSource>CAN</TriggerSource>
+<DeadPixelCorrection>true</DeadPixelCorrection>
+<LeftRightCorrection>true</LeftRightCorrection>
+<StoreImage>false</StoreImage>
+<CCM>((135, 1522, -273, 4184, 0), (-1370, -2938, 4440, 410, 2048), (3783, -3217, -686, -359, 2048))</CCM>
+<SensorRegister>
+<HighPrio>
+<ExposureTime Unit="us">999</ExposureTime>
+<InterleavedExposure>false</InterleavedExposure>
+<Gain>24</Gain>
+</HighPrio>
+<LowPrio>
+<ExposureTime Unit="us">999</ExposureTime>
+<InterleavedExposure>false</InterleavedExposure>
+<Gain>24</Gain>
+</LowPrio>
+</SensorRegister>
+</FIH>
+<IQC>
+<Aperture>94</Aperture>
+<Gain>24</Gain>
+<ExposureTime Unit="us">1000</ExposureTime>
+<FlashIntensity>11280</FlashIntensity>
+<MinFocalLength Unit="mm">85</MinFocalLength>
+<FocalLength Unit="mm">85</FocalLength>
+<MaxFocalLength Unit="mm">85</MaxFocalLength>
+</IQC>
+<Aux>
+<Anpr>
+<Duration Unit="ms">0</Duration>
+<ViolatorMarker>
+<Top>2246</Top>
+<Left>1259</Left>
+<Bottom>3222</Bottom>
+<Right>2391</Right>
+</ViolatorMarker>
+<Center>
+<X>1825</X>
+<Y>2734</Y>
+</Center>
+<CharacterHeight>
+<Min>23</Min>
+<Max>46</Max>
+</CharacterHeight>
+<Areas> </Areas>
+<NumberPlates> </NumberPlates>
+<DetectionLines>
+<Line Index="1">
+<x1>3356.14</x1>
+<y1>3115.49</y1>
+<x2>183.49</x2>
+<y2>3083.17</y2>
+</Line>
+<Line Index="2">
+<x1>3650.53</x1>
+<y1>2758.8</y1>
+<x2>1754.71</x2>
+<y2>2745.28</y2>
+</Line>
+<Line Index="3">
+<x1>3629.97</x1>
+<y1>2783.72</y1>
+<x2>1643.79</x2>
+<y2>2769.13</y2>
+</Line>
+<Line Index="4">
+<x1>3664.64</x1>
+<y1>2741.71</y1>
+<x2>1830.86</x2>
+<y2>2728.9</y2>
+</Line>
+</DetectionLines>
+</Anpr>
+</Aux>
+<DatabarPosition>Bottom</DatabarPosition>
+<EMea>
+<PIdx>7</PIdx>
+<THpt>2404940604</THpt>
+<Jul>1657025332.414594</Jul>
+<ETO Unit="ms">0.014</ETO>
+<TStamp>2022-07-05T15:48:56+03:00</TStamp>
+<Date>05-07-2022</Date>
+<Time>15:48:56</Time>
+<ImgNr>2</ImgNr>
+<RHpt>2400751530</RHpt>
+<YPos>487</YPos>
+<XPos>2854</XPos>
+<Lane>1</Lane>
+<DLin>0</DLin>
+<VSpd Unit="km/h">34</VSpd>
+<VDir>Receding</VDir>
+<VLen Unit="cm">382</VLen>
+<VWid Unit="cm">228</VWid>
+<VType>Car</VType>
+<RCnf>0</RCnf>
+<RTId>127</RTId>
+<REmu>false</REmu>
+<LLab>A</LLab>
+<Anpr>0</Anpr>
+<OffT>Prohibited,Dedicated</OffT>
+<ETyp>Passage</ETyp>
+</EMea>
+</ImageInfo>
+</Page>
+</GATSO>

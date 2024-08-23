@@ -1,0 +1,401 @@
+<GATSO>
+<SystemInfo>
+<SystemSummary Type="Algeria" Version="1.2">
+<Device Node="66" Name="DecisionUnit" Required="true">
+<Hardware Name="PCB" ProductNumber="12301P1" Revision="A" SerialNumber="1234567890">
+<Software Name="DecisionUnit" Checksum="C5E06A9D" Critical="true"/>
+</Hardware>
+</Device>
+<Device Node="64" Name="GatsoPostProcessorRT2" Required="true">
+<Hardware Name="PCB" ProductNumber="12245P1" Revision="NA" SerialNumber="NA">
+<Software Name="GatsoPostProcessorRT2" Checksum="8D00097A" Critical="true"/>
+<Software Name="BootLoader" Checksum="00000000"/>
+</Hardware>
+<Hardware Name="RT2-PCB" ProductNumber="RT2" SerialNumber="NA">
+<Software Name="RT2" Checksum="1B54DEFE"/>
+<Software Name="BootLoader" Checksum="00000000"/>
+</Hardware>
+</Device>
+<Device Node="69" Name="FlashController">
+<Hardware Name="PCB" ProductNumber="12405P3" Revision="A" SerialNumber="1234567890">
+<Software Name="FlashController" Checksum="D531DF3D"/>
+</Hardware>
+</Device>
+<Device Node="71" Name="IpdCan" Required="true">
+<Hardware Name="GTIB" ProductNumber="--" SerialNumber="--">
+<Software Name="libipdcan" Version="1.1.0" Checksum="EDDF305A2454A0A3070EF28300767F79"/>
+</Hardware>
+</Device>
+<Device Node="67" Name="Busproxy" Required="true">
+<Hardware Name="GTCH" ProductNumber="6200-1400-0300" SerialNumber="19-28-825-357">
+<Software Name="gtchsysctrl" Version="R07"/>
+<Software Name="ibuffpga" Version="R24.0575"/>
+</Hardware>
+<Hardware Name="GTIB" ProductNumber="6200-1600-0401" SerialNumber="20-21-807-108">
+<Software Name="gtibsysctrl" Version="R11"/>
+<Software Name="Busproxy" Checksum="3AEE6F89809C68926FBB0E79596A70EF" Critical="true"/>
+<Software Name="webservice" Checksum="BBB010DEEAAE0FA7326942FBE4721751" Critical="true"/>
+</Hardware>
+</Device>
+<Device Node="65" Name="Combine" Required="true">
+<Hardware Name="GTCH" ProductNumber="6200-1400-0300" SerialNumber="19-28-825-357">
+<Software Name="ibuffpga" Version="R24.0575"/>
+<Software Name="gtchsysctrl" Version="R07"/>
+</Hardware>
+<Hardware Name="GTIB" ProductNumber="6200-1600-0401" SerialNumber="20-21-807-108">
+<Software Name="gtxx_ibuf.so" Version="20"/>
+<Software Name="gtibsysctrl" Version="R11"/>
+<Software Name="smd" Version="3.0"/>
+<Software Name="combine" Version="1.1.0-r2" Checksum="9D1265A8093F6315426E78C3B82FB59C" Critical="true"/>
+<Software Name="/lib/libnss_files-2.11.2.so" Checksum="238832D1BC1F5F71A924B126A849E116"/>
+<Software Name="/lib/libnss_nis-2.11.2.so" Checksum="F5FB89A8D3E6C8ADFCB47425042F4D1A"/>
+<Software Name="/lib/libnsl-2.11.2.so" Checksum="69E59E6736DE725BB45ED9851BE05873"/>
+<Software Name="/lib/libnss_compat-2.11.2.so" Checksum="F56EF393889AD20AC92CD19D4ACE6B47"/>
+<Software Name="/usr/lib/libxslt.so.1.1.26" Checksum="29EA05292DF99CCE20BB118FA5E06D4E"/>
+<Software Name="/usr/lib/libcrypto.so.0.9.8" Checksum="F0E691CF40FA2839554BBC8B9A6AAB0A"/>
+<Software Name="/lib/libgcc_s.so.1" Checksum="03DB8AE697F2A4A3EDF31799300D9A6C"/>
+<Software Name="/usr/lib/libstdc++.so.6.0.13" Checksum="5DC9DF8B446FF7589EF6ACAB770955A7"/>
+<Software Name="/usr/lib/libpgm-5.1.so.0.0.118" Checksum="F51A28B05FC1713B61A10DD89011AE2B"/>
+<Software Name="/usr/lib/libz.so.1.2.3.4" Checksum="F32CCDCE61D76887A1EE25ECF20ACC7B"/>
+<Software Name="/lib/libm-2.11.2.so" Checksum="CE0CEC96DFA28605B8507666163C5267"/>
+<Software Name="/lib/libc-2.11.2.so" Checksum="3BEC4FF4A4E17444678ADC017C3E6778"/>
+<Software Name="/usr/lib/libgtcrypt.so" Checksum="D616C4652B01F740E3411365FC234496"/>
+<Software Name="/usr/lib/libprotobuf-c.so.0.0.0" Checksum="D174DB24DDBBD48969D9F3E495252368"/>
+<Software Name="/usr/lib/libssl.so.0.9.8" Checksum="7D5B7458F761A5BC0AE01D1A93442820"/>
+<Software Name="/lib/librt-2.11.2.so" Checksum="C54A1E790901A32EB96F72545A52657B"/>
+<Software Name="/usr/lib/libzmq.so.3.0.0" Checksum="AC3A59F37C6EA5E8B96AA079317AB042"/>
+<Software Name="/lib/libdl-2.11.2.so" Checksum="E37D1DDA7523F4E00084D00ECB846B5D"/>
+<Software Name="/lib/libpthread-2.11.2.so" Checksum="1B505E9E622D4E485FFFA8CBA51DB7E5"/>
+<Software Name="storage" Version="1.1.0-r2" Checksum="4AFA8ED4D5B8792DF6C269D7A8A9FF07"/>
+<Software Name="imgsrv" Version="1.0.0-r1" Checksum="7EE5F16C9F54A701B4A6F964F57993E6"/>
+<Software Name="ipd" Checksum="2D151B95333921F77F350682F243AA17"/>
+<Software Name="ANPR-Worker" Version="V1.0" Checksum="6AB5199F61CCE02F7D0656EFFED0E5B7" Required="true"/>
+<Software Name="intrada" Version="6.0.42001" ExpirationDate="not implemented yet"/>
+<Software Name="/usr/lib/libintrada_cm_X_EU.so" Checksum="96D36242F4EDB92A7E5681ABC8E27D5A"/>
+<Software Name="/usr/lib/libintrada_cm_NL.so" Checksum="41A439BE47D73234526282F39B210748"/>
+<Software Name="/usr/lib/libintrada_cm_DZ.so" Checksum="A5808DC0197E925835F5F3F12C4AF9BA"/>
+</Hardware>
+</Device>
+</SystemSummary>
+<Configuration>
+<Combine Instance="0">
+<Image>
+<Size Unit="Bytes">4194304</Size>
+</Image>
+<EventVideo>
+<MovieImageSize Unit="Bytes">100000</MovieImageSize>
+<SensorFramerate Unit="/s">25</SensorFramerate>
+<Skip>30</Skip>
+</EventVideo>
+</Combine>
+<Flash Instance="0">
+<Triggered>
+<Power>0</Power>
+<Factor>1000000</Factor>
+</Triggered>
+<Strobe>
+<Power>0</Power>
+<Factor>1000000</Factor>
+</Strobe>
+</Flash>
+<EnforcementParameters Instance="0">
+<Direction>
+<Speed>Both</Speed>
+<Anpr>None</Anpr>
+</Direction>
+<CarSpeedLimit Unit="km/h">30</CarSpeedLimit>
+<CarSpeedThreshold Unit="km/h">30</CarSpeedThreshold>
+<TruckSpeedLimit Unit="km/h">30</TruckSpeedLimit>
+<TruckSpeedThreshold Unit="km/h">30</TruckSpeedThreshold>
+<TruckLengthThreshold Unit="cm">750</TruckLengthThreshold>
+<MissionType>Moving</MissionType>
+<LengthTimeout Unit="cm">1000</LengthTimeout>
+<AnprInterval Unit="ms">1500</AnprInterval>
+<AnprTriggerMode>Timeout</AnprTriggerMode>
+<AnprTimeout Unit="ms">35000</AnprTimeout>
+<AnprAvailable>false</AnprAvailable>
+<MaxClassificationDistance Unit="cm">2000</MaxClassificationDistance>
+<AnprMaxHandlers>4</AnprMaxHandlers>
+</EnforcementParameters>
+<Lanes Instance="0">
+<DistanceToFirstLane Unit="cm">500</DistanceToFirstLane>
+<Lane Number="1">
+<Width Unit="cm">300</Width>
+<TriggerLine Unit="cm">3000</TriggerLine>
+<Label>A</Label>
+</Lane>
+<Lane Number="2">
+<Width Unit="cm">300</Width>
+<TriggerLine Unit="cm">3000</TriggerLine>
+<Label>B</Label>
+</Lane>
+<Lane Number="3">
+<Width Unit="cm">300</Width>
+<TriggerLine Unit="cm">3000</TriggerLine>
+<Label>C</Label>
+</Lane>
+<Lane Number="4">
+<Width Unit="cm">300</Width>
+<TriggerLine Unit="cm">3000</TriggerLine>
+<Label>D</Label>
+</Lane>
+</Lanes>
+<EventCapture Instance="0">
+<EventVideo>true</EventVideo>
+<PreTriggerTime Unit="ms">5000</PreTriggerTime>
+<PostTriggerTime Unit="ms">5000</PostTriggerTime>
+</EventCapture>
+<Anpr Instance="0">
+<Marker>
+<Height Unit="cm">170</Height>
+<VerticalOpening Unit="°">0.0</VerticalOpening>
+<Width Unit="cm">320</Width>
+<HorizontalOpening Unit="°">0.0</HorizontalOpening>
+<Offset Direction="Receding">
+<X Unit="cm">150</X>
+<Y Unit="cm">130</Y>
+<Z Unit="cm">80</Z>
+</Offset>
+<Offset Direction="Approaching">
+<X Unit="cm">300</X>
+<Y Unit="cm">110</Y>
+<Z Unit="cm">40</Z>
+</Offset>
+</Marker>
+<Roi>
+<Height Unit="cm">170</Height>
+<VerticalOpening Unit="°">0.0</VerticalOpening>
+<Width Unit="cm">320</Width>
+<HorizontalOpening Unit="°">0.0</HorizontalOpening>
+<Offset Direction="Receding">
+<X Unit="cm">150</X>
+<Y Unit="cm">130</Y>
+<Z Unit="cm">80</Z>
+</Offset>
+<Offset Direction="Approaching">
+<X Unit="cm">300</X>
+<Y Unit="cm">110</Y>
+<Z Unit="cm">40</Z>
+</Offset>
+</Roi>
+<CharacterHeight>
+<Min Unit="cm">4</Min>
+<Max Unit="cm">8</Max>
+</CharacterHeight>
+</Anpr>
+<System Instance="0">
+<MeasuringPosition>Right</MeasuringPosition>
+<Housing Instance="0">
+<X Unit="cm">-150</X>
+<Y Unit="cm">0</Y>
+<Z Unit="cm">82</Z>
+<CameraYaw Unit="°">-15.0</CameraYaw>
+<RadarYaw Direction="Receding" Unit="°">-19.0</RadarYaw>
+<RadarYaw Direction="Approaching" Unit="°">-25.0</RadarYaw>
+<VehicleType>Void</VehicleType>
+</Housing>
+<TimeSource>RTC</TimeSource>
+<InstallerName>Alesi</InstallerName>
+<LocationDescription>Gatso</LocationDescription>
+<DateTimeOffset>+02:00</DateTimeOffset>
+<OperatorName>User</OperatorName>
+<WeatherCondition>Overcast</WeatherCondition>
+</System>
+<Identification Instance="0">
+<Serial>20-21-807-108</Serial>
+</Identification>
+<Alarm Instance="0">
+<RollMinimum Unit="°">2</RollMinimum>
+<RollMaximum Unit="°">2</RollMaximum>
+<PitchMinimum Unit="°">2</PitchMinimum>
+<PitchMaximum Unit="°">2</PitchMaximum>
+<TemperatureMinimum Unit="°C">-20</TemperatureMinimum>
+<TemperatureMaximum Unit="°C">60</TemperatureMaximum>
+<HumidityMinimum Unit="%">0</HumidityMinimum>
+<HumidityMaximum Unit="%">95</HumidityMaximum>
+</Alarm>
+</Configuration>
+<EPas>
+<PId>50200</PId>
+<PIdx>0</PIdx>
+<PKey>1717064718</PKey>
+<Jul>1717064718.966383</Jul>
+</EPas>
+<EOff>
+<PIdx>4</PIdx>
+<OffT>Speed</OffT>
+</EOff>
+</SystemInfo>
+<Page Id="1">
+<ImageInfo>
+<HdrState>
+<Values>3C0A2A72,C03175D8,C0B5826F,C09C5A24,3C0057C8,3C0E4857,3BFC9BB8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</Values>
+</HdrState>
+<FIH>
+<Frame>
+<FrameType>CFA</FrameType>
+<Width>0</Width>
+<Height>0</Height>
+<BitDepth>12</BitDepth>
+</Frame>
+<SensorID>20123690</SensorID>
+<Timestamp Unit="s">412.144690</Timestamp>
+<TriggerPrio>High</TriggerPrio>
+<TriggerSource>CAN</TriggerSource>
+<DeadPixelCorrection>true</DeadPixelCorrection>
+<LeftRightCorrection>true</LeftRightCorrection>
+<StoreImage>false</StoreImage>
+<CCM>((135, 1522, -273, 4184, 0), (-1370, -2938, 4440, 410, 2048), (3783, -3217, -686, -359, 2048))</CCM>
+<SensorRegister>
+<HighPrio>
+<ExposureTime Unit="us">999</ExposureTime>
+<InterleavedExposure>false</InterleavedExposure>
+<Gain>43</Gain>
+</HighPrio>
+<LowPrio>
+<ExposureTime Unit="us">999</ExposureTime>
+<InterleavedExposure>false</InterleavedExposure>
+<Gain>43</Gain>
+</LowPrio>
+</SensorRegister>
+</FIH>
+<IQC>
+<Aperture>94</Aperture>
+<Gain>43</Gain>
+<ExposureTime Unit="us">1000</ExposureTime>
+<FlashIntensity>9024</FlashIntensity>
+<MinFocalLength Unit="mm">85</MinFocalLength>
+<FocalLength Unit="mm">85</FocalLength>
+<MaxFocalLength Unit="mm">85</MaxFocalLength>
+</IQC>
+<Aux>
+<Anpr>
+<Duration Unit="ms">380</Duration>
+<ViolatorMarker>
+<Top>1461</Top>
+<Left>596</Left>
+<Bottom>3189</Bottom>
+<Right>3810</Right>
+</ViolatorMarker>
+<Roi>
+<Top>1461</Top>
+<Left>596</Left>
+<Bottom>3189</Bottom>
+<Right>3810</Right>
+</Roi>
+<CharacterHeight>
+<Min>51</Min>
+<Max>103</Max>
+</CharacterHeight>
+<Areas>
+<Location>
+<Top>2456</Top>
+<Left>872</Left>
+<Bottom>2746</Bottom>
+<Right>1992</Right>
+</Location>
+<Location>
+<Top>1461</Top>
+<Left>2584</Left>
+<Bottom>1710</Bottom>
+<Right>2984</Right>
+</Location>
+<Location>
+<Top>1461</Top>
+<Left>3292</Left>
+<Bottom>1910</Bottom>
+<Right>3839</Right>
+</Location>
+<Location>
+<Top>1604</Top>
+<Left>2504</Left>
+<Bottom>1926</Bottom>
+<Right>2904</Right>
+</Location>
+<Location>
+<Top>2616</Top>
+<Left>2524</Left>
+<Bottom>2938</Bottom>
+<Right>2924</Right>
+</Location>
+<Location>
+<Top>1480</Top>
+<Left>1336</Left>
+<Bottom>1882</Bottom>
+<Right>1836</Right>
+</Location>
+<Location>
+<Top>2236</Top>
+<Left>3072</Left>
+<Bottom>2878</Bottom>
+<Right>3839</Right>
+</Location>
+<Location>
+<Top>1660</Top>
+<Left>576</Left>
+<Bottom>2302</Bottom>
+<Right>1140</Right>
+</Location>
+<Location>
+<Top>2045</Top>
+<Left>1236</Left>
+<Bottom>2447</Bottom>
+<Right>1736</Right>
+</Location>
+<Location>
+<Top>1461</Top>
+<Left>3024</Left>
+<Bottom>1686</Bottom>
+<Right>3424</Right>
+</Location>
+</Areas>
+<NumberPlates>
+<Plate>
+<Number>44516818</Number>
+<Country>DZ</Country>
+<CharacterHeight>8291</CharacterHeight>
+<Confidence>235</Confidence>
+<Location>
+<Top>2557</Top>
+<Left>1223</Left>
+<Bottom>2668</Bottom>
+<Right>1714</Right>
+</Location>
+<Quadrangle>
+<TopLeftX>1223</TopLeftX>
+<TopLeftY>2557</TopLeftY>
+<TopRightX>1712</TopRightX>
+<TopRightY>2560</TopRightY>
+<BottomLeftX>1225</BottomLeftX>
+<BottomLeftY>2668</BottomLeftY>
+<BottomRightX>1714</BottomRightX>
+<BottomRightY>2668</BottomRightY>
+</Quadrangle>
+</Plate>
+</NumberPlates>
+</Anpr>
+</Aux>
+<EMea>
+<PIdx>6</PIdx>
+<Jul>1717064718.966383</Jul>
+<TStamp>2024-05-30T12:25:18+02:00</TStamp>
+<Date>30-05-2024</Date>
+<Time>12:25:18</Time>
+<EvNr>200</EvNr>
+<Dist Unit="cm">889</Dist>
+<ESpd Unit="km/h">22</ESpd>
+<DSpd Unit="km/h">-74</DSpd>
+<VSpd Unit="km/h">52</VSpd>
+<VDir>Approaching</VDir>
+<VLen Unit="cm">0</VLen>
+<VTyp>Car</VTyp>
+<RTId>6</RTId>
+<REmu>false</REmu>
+<OffT>Speed</OffT>
+<ETyp>Passage</ETyp>
+<GPSLat>N50 28.8353</GPSLat>
+<GPSLon>E030 28.5417</GPSLon>
+</EMea>
+</ImageInfo>
+</Page>
+</GATSO>

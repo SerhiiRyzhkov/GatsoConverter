@@ -1,0 +1,59 @@
+C:\Program Files\GATSO\GSMJ2Convert>GSMJ2Convert.exe -?
+Compatible GS Media Library found in: C:\Program Files\GATSO\GSMJ2Convert
+ > GSMJ2Convert version 1.15.1.10
+   GS Media Library version 4.8.2.0
+
+   Application folder: C:\Program Files\GATSO\GSMJ2Convert
+   Data folder: C:\Users\myuser\GATSO\GSMJ2Convert
+
+   -src <FOLDER>: source folder. Default './MJ2'
+   -sub <0/1>: search in subfolders. Default 0
+   -sux <MASKS>: exclude subfolders matching MASKS. Multiple masks can be specified, separated by a semicolon. Default none
+   -dst <FOLDER>: destination folder. Default './JPG'
+   -fol <XPATHFILE>: create output subfolders. XPATHFILE must point to a text file containing one XPath statement per line. Default none
+   -mir <0/1>: mirror input subfolders to output. Default 0
+   -key <FOLDER>: folder containing decryption keys. Default '{APPDATA}/Keys'
+   -pwd <PASSWORD>: decryption password. Default none
+   -jcq <0..100>: JPEG compression quality. Default 75
+   -scl <0..4>: image scale. 0 = full scale, 1 = half scale, 2 = quarter scale, 3 = one-eight scale, 4 = one-sixteenth scale. Default 0
+   -scv <0..4>: video scale. 0 = full scale, 1 = half scale, 2 = quarter scale, 3 = one-eight scale, 4 = one-sixteenth scale. Default 0
+   -shl <0..4>: image bit shift level. Default 0
+   -shv <0..4>: video bit shift level. Default 0
+   -ton <0/1>: image tonemapping. Default 0
+   -tnv <0/1>: video tonemapping. Default 0
+   -lip <0..9>: index of number plate cutout. If greater than zero, the number plate will be tonemapped using parameters derived from the first image, for a more optimal result. Default 0
+   -neg <0/1>: negative image off/on. Default 0
+   -ngv <0/1>: negative video off/on. Default 0
+   -min <-n..n>: index to start at. 0..n image index, -n..-1 frame index. Default 0
+   -max <-n..n>: index to stop at. 0..n image index, -n..-1 frame index. Default 1
+   -vzz <nm> or <ns>: export video frame at n meter or n seconds after the offence mark. The frame must be within the min max range. Default off
+   -dbh <0..n>: image databar height. Negative value means databar is at the top, positive value means databar is at the bottom. Default 0
+   -dbv <0..n>: video databar height. Negative value means databar is at the top, positive value means databar is at the bottom. Default 0
+   -dbp <-1/1>: databar position. -1 means databar is at the top, +1 means databar is at the bottom. Default 1
+   -avi <0/1>: export video off/on. Default 0
+   -ifr <1..n>: video input framerate. Default 10
+   -ofr <1..n>: video output framerate. Default 10
+   -fdv <1..n>: divide framerate by N. Default 1
+   -vbr <1..31>: video quality. 1 = best, 31 = worst. Default 1
+   -xml <0/1/2>: export XML off/merged/separate. Default all
+   -xmi <JP2 INDEX>: if file contains multiple JP2s/MJ2s, specify which XMLs to export. Value can either be a single index, or several indices separated by ','. Default 0
+   -xsl <FILE>: convert XML using this XSLT stylesheet. Default off
+   -exc <0:0..9, 1:0..9, ...>: exclude certain images or frames. Format per block <JP2 index>:<range start>..<range end>. Range can be a single number, JP2 index (in CGE) can be omitted. Default empty
+   -mp4 <0/1>: export video as MPEG-4. Default 0
+   -chk <FILE>: verify fingerprints using this list of fingerprints. Default '{APPDATA}/Fingerprints.txt'
+   -fpx <1/0>: export fingerprints information. Default 0
+   -dec <1/0>: export original file without encryption or digital signature. Default 0
+   -dbg <0, 1, 2>: export JP2 and CGE file structure information (single or double pass). Default 0
+   -raw <1/0>: export RAW file. Default 0
+   -pln <1/0>: export RAW file as plane-ordered instead of pixel-ordered. Default 0
+   -ppm <1/0>: export PPM file. Default 0
+   -gsc <1/0>: GSConvert naming/export compatibility mode. XSL stylesheets used for conversion should be placed in the application folder and be named 'compat-<XMLIndex>.xsl', where <XMLIndex> is the XML index conforming the SDI standard (0 = main XML, 1..n = image XMLs). Default 0
+   -exe <FILE>: execute an application or script whenever a file has been processed. Default off
+   -ton <1/0>: tonemap image on/off. Default 0
+   -tnv <1/0>: tonemap video frames on/off. Default 0
+   -lpi <0..n>: specify index of license plate cutout. Default 0
+   -trg <1/0>: show triggerline on exported JPEG of first high resolution image. Default 0
+   -vmk <1/0>: show violator marking on exported JPEG of first high resolution image. Default 0
+   -vms <0..n>: width of the lines used for drawing overlays. If 0, the line width is scaled according to the discard level. 10 on level 0, 5 on level 1, 2 on level 2 and 1 for levels 3 and 4. Default 0
+   -vmt <rectangle/plus/cross/cross+rectangle>: show the violator marking as a bounding rectangle or centered cross, or both. Default rectangle
+   -vmz size/2 of <rectangle/cross/cross+rectangle>:  Default 250

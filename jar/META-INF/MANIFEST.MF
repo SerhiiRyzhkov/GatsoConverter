@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: GSMJ2 Convert
+Implementation-Version: 1.15.1.10
+Built-By: Sensys Gatso
+Implementation-Vendor-Id: nl.gatso.haarlemtools
+Created-By: Apache Maven 3.6.3
+Build-Jdk: 1.8.0_202
+Main-Class: nl.gatso.haarlemtools.gsmj2convert.gsmj2convert.GSMJ2Conve
+ rt
+
